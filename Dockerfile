@@ -19,7 +19,7 @@ RUN apk add --update pcre-dev openssl-dev \
  && tar jxvf tabix-${TABIX_VERSION}.tar.bz2  \
  && cd tabix-${TABIX_VERSION}/ \
  && make \
- && make install \
+ && ln -sf /tabix-${TABIX_VERSION}/tabix /usr/local/bin/ \
  && apk del build-dependencies \
  && rm -rf /var/chache/apk/*
 
