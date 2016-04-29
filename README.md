@@ -1,1 +1,2 @@
-# alpine-samtools
+# alpine-samtool
+samtools on alpines
